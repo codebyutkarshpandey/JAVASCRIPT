@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>object</title>
+
+</head>
+
+<body>
+<script>
+      /*const product ={
+            name: 'boy',
+            price: 50
+      };
+      console.log(product);
+      console.log(product.name);
+      product.name='cotton boy'
+      console.log(product);*/
+      const product2 ={
+            name : 'shirt',
+            rating : {
+                  stars:5,count : 69},
+      };
+
+      fun : function f1(){
+            console.log('function insie object');
+      }
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']); // ye tab use krte hai jab koi special keyword use kr rhe ho object ki properties me jaise procuct-price abb dot se acces krne pr ye dash (-) ko minus samjhe ga aur error dega//
+
+      console.log(product2.rating.stars);
+      product2.fun();
+     console.log(  JSON.stringify(product2));
+
+
+     //conversion JSON to object//
+
+     const jsonstring=JSON.stringify(product2);
+    console.log(  JSON.parse(jsonstring));
+
+    const object4 = {
+     massage:'hello',
+     price:799
+    };
+//destructing
+//const message=object4.message;
+const {message,price}=object4;
+console.log(message);
+
+</script>
+
+</body>
+</html>
